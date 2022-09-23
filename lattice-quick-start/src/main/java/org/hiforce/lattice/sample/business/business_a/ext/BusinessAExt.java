@@ -10,7 +10,6 @@ import org.hiforce.lattice.sample.model.OrderLine;
  */
 @Realization(codes = "business.a")
 public class BusinessAExt extends BlankOrderLinePriceExt {
-
     @Override
     public Long getCustomUnitPrice(OrderLine orderLine) {
         return 2000L;
