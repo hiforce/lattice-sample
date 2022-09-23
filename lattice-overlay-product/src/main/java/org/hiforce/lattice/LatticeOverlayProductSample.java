@@ -17,8 +17,11 @@ public class LatticeOverlayProductSample {
         Lattice.getInstance().setSimpleMode(true);
         Lattice.getInstance().start();
 
+        System.out.println("---------------------------------------");
         doBusinessA(null);
+        System.out.println("---------------------------------------");
         doBusinessA("groupBy");
+        System.out.println("---------------------------------------");
     }
 
     private static void doBusinessA(String source) {
