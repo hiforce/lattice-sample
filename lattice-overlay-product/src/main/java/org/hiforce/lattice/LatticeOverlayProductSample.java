@@ -18,13 +18,13 @@ public class LatticeOverlayProductSample {
         Lattice.getInstance().start();
 
         System.out.println("---------------------------------------");
-        doBusinessA(null);
+        doBusiness(null);
         System.out.println("---------------------------------------");
-        doBusinessA("groupBy");
+        doBusiness("groupBy");
         System.out.println("---------------------------------------");
     }
 
-    private static void doBusinessA(String source) {
+    public static void doBusiness(String source) {
         OrderLine orderLine = new OrderLine();
         orderLine.setUnitPrice(1000L);
         orderLine.setBizCode("business.b");
@@ -48,8 +48,10 @@ public class LatticeOverlayProductSample {
                 }
             }.invoke();
             System.out.println("[Business B] overlay product unit price: " + unitPrice);
-        } catch (Throwable ex) {
-            ex.printStackTrace();
+        } catch (LatticeRuntimeException ex) {
+            System.out.println(ex.getErrorMessage().getText());
+        } catch (Throwable th) {
+            th.printStackTrace();
         }
     }
 }

@@ -2,6 +2,7 @@ package org.hiforce.lattice.sample.business.business_b.ext;
 
 import org.hifforce.lattice.annotation.Realization;
 import org.hiforce.lattice.sample.ability.ext.BlankOrderLinePriceExt;
+import org.hiforce.lattice.sample.model.OrderLine;
 
 /**
  * @author Rocky Yu
@@ -10,5 +11,8 @@ import org.hiforce.lattice.sample.ability.ext.BlankOrderLinePriceExt;
 @Realization(codes = "business.b")
 public class BusinessBExt extends BlankOrderLinePriceExt {
 
-    //do nothing.
+    @Override
+    public Long getCustomUnitPrice(OrderLine orderLine) {
+        return 1000L;
+    }
 }
