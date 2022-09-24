@@ -27,7 +27,7 @@ public class LatticeOverlayProductSample {
     private static void doBusinessA(String source) {
         OrderLine orderLine = new OrderLine();
         orderLine.setUnitPrice(1000L);
-        orderLine.setBizCode("business.a");
+        orderLine.setBizCode("business.b");
         try {
             Long unitPrice = new BizSessionScope<Long, OrderLine>(orderLine) {
                 @Override
@@ -47,7 +47,7 @@ public class LatticeOverlayProductSample {
                     return request;
                 }
             }.invoke();
-            System.out.println("[Business A] overlay product unit price: " + unitPrice);
+            System.out.println("[Business B] overlay product unit price: " + unitPrice);
         } catch (Throwable ex) {
             ex.printStackTrace();
         }
