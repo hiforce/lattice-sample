@@ -6,6 +6,7 @@ import org.hifforce.lattice.model.business.TemplateType;
 import org.hifforce.lattice.model.config.BusinessConfig;
 import org.hifforce.lattice.model.config.ExtPriority;
 import org.hifforce.lattice.model.config.ProductConfig;
+import org.hifforce.lattice.model.config.builder.BusinessConfigBuilder;
 import org.hifforce.lattice.model.config.builder.PriorityConfigBuilder;
 import org.hiforce.lattice.LatticeOverlayProductSample;
 import org.hiforce.lattice.runtime.Lattice;
@@ -28,20 +29,18 @@ public class LoadBusinessConfigSample {
     }
 
     private static BusinessConfig buildBusinessBConfig() {
-        return BusinessConfig.builder()
+        return BusinessConfigBuilder.builder()
                 .bizCode("business.b")
-                .installedProducts(Lists.newArrayList(
-                        ProductConfig.builder()
-                                .code("lattice.productGroupBuyProduct")
-                                .build()
+                .install(Lists.newArrayList(
+                        ProductConfig.of("lattice.productGroupBuyProduct")
                 ))
-                .priorityConfigs(Lists.newArrayList(
-                        PriorityConfigBuilder.builder()
+                .extension
+                        (PriorityConfigBuilder.builder()
                                 .extCode("OrderLinePriceExt.EXT_ORDER_LINE_CUSTOM_UNIT_PRICE")
                                 .priority(ExtPriority.of("lattice.productGroupBuyProduct", TemplateType.PRODUCT))
                                 .priority(ExtPriority.of("business.b", TemplateType.BUSINESS))
                                 .build()
-                ))
+                        )
                 .build();
     }
 }
