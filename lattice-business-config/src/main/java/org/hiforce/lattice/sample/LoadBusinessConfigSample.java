@@ -2,13 +2,12 @@ package org.hiforce.lattice.sample;
 
 import lombok.extern.slf4j.Slf4j;
 import org.hifforce.lattice.model.config.BusinessConfig;
-import org.hifforce.lattice.model.config.ExtPriority;
-import org.hifforce.lattice.model.config.ProductConfig;
 import org.hifforce.lattice.model.config.builder.BusinessConfigBuilder;
 import org.hifforce.lattice.model.config.builder.PriorityConfigBuilder;
 import org.hiforce.lattice.LatticeOverlayProductSample;
 import org.hiforce.lattice.product.GroupBuyProduct;
 import org.hiforce.lattice.runtime.Lattice;
+import org.hiforce.lattice.sample.business.business_b.BusinessB;
 
 import static org.hifforce.lattice.model.business.TemplateType.BUSINESS;
 import static org.hifforce.lattice.model.business.TemplateType.PRODUCT;
@@ -33,15 +32,14 @@ public class LoadBusinessConfigSample {
 
     private static BusinessConfig buildBusinessBConfig() {
         return BusinessConfigBuilder.builder()
-                .bizCode("business.b")
+                .bizCode(BusinessB.CODE)
                 .install(GroupBuyProduct.CODE)
-                .extension
-                        (PriorityConfigBuilder.builder()
+                .extension(
+                        PriorityConfigBuilder.builder()
                                 .extCode(EXT_ORDER_LINE_CUSTOM_UNIT_PRICE)
-                                .priority(ExtPriority.of(GroupBuyProduct.CODE, PRODUCT))
-                                .priority(ExtPriority.of("business.b", BUSINESS))
-                                .build()
-                        )
+                                .priority(GroupBuyProduct.CODE, PRODUCT)
+                                .priority(BusinessB.CODE, BUSINESS)
+                                .build())
                 .build();
     }
 }

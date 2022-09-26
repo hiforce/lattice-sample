@@ -7,6 +7,7 @@ import org.hifforce.lattice.model.business.BusinessTemplate;
  * @author Rocky Yu
  * @since 2022/9/22
  */
-@Business(code = "business.b", name = "Business B")
+@Business(code = BusinessB.CODE, name = "Business B")
 public class BusinessB extends BusinessTemplate {
+    public static final String CODE = "business.b";
 }
