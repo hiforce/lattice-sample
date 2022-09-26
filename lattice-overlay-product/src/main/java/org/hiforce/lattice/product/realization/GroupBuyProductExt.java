@@ -9,7 +9,7 @@ import org.hiforce.lattice.sample.model.OrderLine;
  * @author Rocky Yu
  * @since 2022/9/23
  */
-@Realization(codes = GroupBuyProduct.GROUP_BUY_PRODUCT_CODE)
+@Realization(codes = GroupBuyProduct.CODE)
 public class GroupBuyProductExt extends BlankOrderLinePriceExt {
     @Override
     public Long getCustomUnitPrice(OrderLine orderLine) {

@@ -10,10 +10,10 @@ import org.hiforce.lattice.scenario.BuyScenarioRequest;
  * @author Rocky Yu
  * @since 2022/9/23
  */
-@Product(code = GroupBuyProduct.GROUP_BUY_PRODUCT_CODE, name = "Group Buy Trade Product")
+@Product(code = GroupBuyProduct.CODE, name = "Group Buy Trade Product")
 public class GroupBuyProduct extends ProductTemplate {
 
-    public static final String GROUP_BUY_PRODUCT_CODE = "lattice.productGroupBuyProduct";
+    public static final String CODE = "lattice.productGroupBuyProduct";
 
     @Override
     public boolean isEffect(ScenarioRequest request) {

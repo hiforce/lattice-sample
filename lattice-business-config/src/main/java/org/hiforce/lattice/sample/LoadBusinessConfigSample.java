@@ -1,15 +1,18 @@
 package org.hiforce.lattice.sample;
 
-import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
-import org.hifforce.lattice.model.business.TemplateType;
 import org.hifforce.lattice.model.config.BusinessConfig;
 import org.hifforce.lattice.model.config.ExtPriority;
 import org.hifforce.lattice.model.config.ProductConfig;
 import org.hifforce.lattice.model.config.builder.BusinessConfigBuilder;
 import org.hifforce.lattice.model.config.builder.PriorityConfigBuilder;
 import org.hiforce.lattice.LatticeOverlayProductSample;
+import org.hiforce.lattice.product.GroupBuyProduct;
 import org.hiforce.lattice.runtime.Lattice;
+
+import static org.hifforce.lattice.model.business.TemplateType.BUSINESS;
+import static org.hifforce.lattice.model.business.TemplateType.PRODUCT;
+import static org.hiforce.lattice.sample.ability.ext.OrderLinePriceExt.EXT_ORDER_LINE_CUSTOM_UNIT_PRICE;
 
 /**
  * @author Rocky Yu
@@ -31,14 +34,12 @@ public class LoadBusinessConfigSample {
     private static BusinessConfig buildBusinessBConfig() {
         return BusinessConfigBuilder.builder()
                 .bizCode("business.b")
-                .install(Lists.newArrayList(
-                        ProductConfig.of("lattice.productGroupBuyProduct")
-                ))
+                .install(ProductConfig.of(GroupBuyProduct.CODE))
                 .extension
                         (PriorityConfigBuilder.builder()
-                                .extCode("OrderLinePriceExt.EXT_ORDER_LINE_CUSTOM_UNIT_PRICE")
-                                .priority(ExtPriority.of("lattice.productGroupBuyProduct", TemplateType.PRODUCT))
-                                .priority(ExtPriority.of("business.b", TemplateType.BUSINESS))
+                                .extCode(EXT_ORDER_LINE_CUSTOM_UNIT_PRICE)
+                                .priority(ExtPriority.of(GroupBuyProduct.CODE, PRODUCT))
+                                .priority(ExtPriority.of("business.b", BUSINESS))
                                 .build()
                         )
                 .build();
