@@ -34,7 +34,7 @@ public class LoadBusinessConfigSample {
     private static BusinessConfig buildBusinessBConfig() {
         return BusinessConfigBuilder.builder()
                 .bizCode("business.b")
-                .install(ProductConfig.of(GroupBuyProduct.CODE))
+                .install(GroupBuyProduct.CODE)
                 .extension
                         (PriorityConfigBuilder.builder()
                                 .extCode(EXT_ORDER_LINE_CUSTOM_UNIT_PRICE)
