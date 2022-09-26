@@ -11,7 +11,7 @@
 
     <version>1.0.0-SNAPSHOT</version>
     <properties>
-        <version.lattice>1.0.5-SNAPSHOT</version.lattice>
+        <version.lattice>1.0.5</version.lattice>
         <version.spring.boot>2.7.3</version.spring.boot>
         <springext-plugin-version>1.2</springext-plugin-version>
         <version.jdk>1.8</version.jdk>
@@ -22,6 +22,7 @@
         <module>lattice-quick-start</module>
         <module>lattice-overlay-product</module>
         <module>lattice-business-config</module>
+        <module>lattice-load-business-config</module>
     </modules>
 
     <dependencyManagement>
@@ -41,6 +42,11 @@
             <dependency>
                 <groupId>org.hiforce.lattice</groupId>
                 <artifactId>lattice-runtime</artifactId>
+                <version>${version.lattice}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hiforce.lattice</groupId>
+                <artifactId>lattice-load-config-res</artifactId>
                 <version>${version.lattice}</version>
             </dependency>
             <dependency>

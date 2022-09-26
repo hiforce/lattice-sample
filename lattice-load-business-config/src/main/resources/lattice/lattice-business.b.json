@@ -1,0 +1,24 @@
+{
+  "bizCode": "business.b",
+  "priority": 1000,
+  "products": [
+    {
+      "code": "lattice.productGroupBuyProduct"
+    }
+  ],
+  "extensions": [
+    {
+      "extCode": "OrderLinePriceExt.EXT_ORDER_LINE_CUSTOM_UNIT_PRICE",
+      "priorities": [
+        {
+          "code": "lattice.productGroupBuyProduct",
+          "type": "PRODUCT"
+        },
+        {
+          "code": "business.b",
+          "type": "BUSINESS"
+        }
+      ]
+    }
+  ]
+}
