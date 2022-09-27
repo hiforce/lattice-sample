@@ -1,6 +1,7 @@
 package org.hiforce.lattice.sample.ability;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.hifforce.lattice.annotation.Ability;
 import org.hifforce.lattice.model.business.IBizObject;
 import org.hiforce.lattice.runtime.ability.BaseLatticeAbility;
@@ -23,6 +24,23 @@ public class ReduceSampleAbility extends BaseLatticeAbility<BlankReduceSampleExt
         super(bizObject);
     }
 
+    public Boolean noneMatchReduce() {
+        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
+                BlankReduceSampleExt::getCustomListResult,
+                Reducers.noneMatch(p-> null != p && p.contains("Jean")));
+    }
+
+    public Boolean allMathReduce() {
+        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
+                BlankReduceSampleExt::getCustomListResult,
+                Reducers.allMatch(Objects::nonNull));
+    }
+
+    public Boolean anyMatchReduce() {
+        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
+                BlankReduceSampleExt::getCustomListResult,
+                Reducers.anyMatch(p -> null != p && p.contains("Jack")));
+    }
 
     public List<String> flatListReduce() {
         return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,

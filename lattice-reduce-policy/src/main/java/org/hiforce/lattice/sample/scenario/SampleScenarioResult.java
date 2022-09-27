@@ -23,4 +23,16 @@ public class SampleScenarioResult implements Serializable {
     @Getter
     @Setter
     private List<String> flatListResult;
+
+    @Getter
+    @Setter
+    private Boolean anyMatchResult;
+
+    @Getter
+    @Setter
+    private Boolean allMatchResult;
+
+    @Getter
+    @Setter
+    private Boolean noneMatchResult;
 }
