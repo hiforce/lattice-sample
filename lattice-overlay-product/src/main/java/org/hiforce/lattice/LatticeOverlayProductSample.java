@@ -20,7 +20,7 @@ public class LatticeOverlayProductSample {
         System.out.println("---------------------------------------");
         doBusiness(null);
         System.out.println("---------------------------------------");
-        doBusiness("groupBy");
+        doBusiness("groupBuy");
         System.out.println("---------------------------------------");
     }
 

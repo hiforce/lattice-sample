@@ -23,6 +23,7 @@
         <module>lattice-overlay-product</module>
         <module>lattice-business-config</module>
         <module>lattice-load-business-config</module>
+        <module>lattice-reduce-policy</module>
     </modules>
 
     <dependencyManagement>

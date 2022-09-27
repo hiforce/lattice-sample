@@ -26,7 +26,7 @@ public class LoadBusinessConfigSample {
         Lattice.getInstance().addBusinessConfig(buildBusinessBConfig());//register business configuration.
 
         System.out.println("---------------------------------------");
-        LatticeOverlayProductSample.doBusiness("groupBy");
+        LatticeOverlayProductSample.doBusiness("groupBuy");
         System.out.println("---------------------------------------");
     }
 

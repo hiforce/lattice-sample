@@ -18,7 +18,7 @@ public class GroupBuyProduct extends ProductTemplate {
     @Override
     public boolean isEffect(ScenarioRequest request) {
         if (request instanceof BuyScenarioRequest) {
-            boolean effect = StringUtils.equals("groupBy", ((BuyScenarioRequest) request).getSource());
+            boolean effect = StringUtils.equals("groupBuy", ((BuyScenarioRequest) request).getSource());
             System.out.println("GroupBuyProduct effect status:" + effect);
             return effect;
         }
