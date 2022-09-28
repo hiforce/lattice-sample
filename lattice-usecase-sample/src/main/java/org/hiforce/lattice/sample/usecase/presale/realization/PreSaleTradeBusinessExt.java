@@ -8,6 +8,7 @@ import org.hiforce.lattice.sample.usecase.presale.ability.PreSaleOrderLineAbilit
 import org.hiforce.lattice.sample.usecase.presale.model.PreSaleOrderLine;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 /**
  * @author Rocky Yu
@@ -19,7 +20,8 @@ public class PreSaleTradeBusinessExt extends BlankOrderLineSaveExt {
     public BigDecimal getItemCustomUnitPrice(OrderLine orderLine) {
         PreSaleOrderLineAbility ability = new PreSaleOrderLineAbility(buildPreSaleOrderLine(orderLine));
         BigDecimal ratio = ability.getCustomDownPaymentRatio();
-        System.out.println("[UseCase]PreSaleTrade load custom down payment ratio: " + ratio.toString());
+        DecimalFormat df = new DecimalFormat("#.00");
+        System.out.println("[UseCase]PreSaleTrade load custom down payment ratio: " + df.format(ratio));
         return new BigDecimal(orderLine.getItem().getUnitPrice()).multiply(ratio);
     }
 
