@@ -13,6 +13,6 @@ public class HiMoviePreSaleExt extends BlankPreSaleTradeSDK {
 
     @Override
     public Double getCustomDownPaymentRatio() {
-        return 0.75;
+        return 0.3;
     }
 }
