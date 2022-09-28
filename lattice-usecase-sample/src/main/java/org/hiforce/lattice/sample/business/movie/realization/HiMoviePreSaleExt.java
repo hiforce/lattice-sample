@@ -1,7 +1,7 @@
-package org.hiforce.lattice.sample.business.cloth.realization;
+package org.hiforce.lattice.sample.business.movie.realization;
 
 import org.hifforce.lattice.annotation.Realization;
-import org.hiforce.lattice.sample.business.cloth.HiMovieBusiness;
+import org.hiforce.lattice.sample.business.movie.HiMovieBusiness;
 import org.hiforce.lattice.sample.usecase.presale.sdk.BlankPreSaleTradeSDK;
 
 /**

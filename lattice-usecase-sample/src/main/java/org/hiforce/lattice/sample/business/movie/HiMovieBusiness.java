@@ -1,4 +1,4 @@
-package org.hiforce.lattice.sample.business.cloth;
+package org.hiforce.lattice.sample.business.movie;
 
 import org.hifforce.lattice.annotation.Business;
 import org.hifforce.lattice.model.business.BusinessTemplate;
