@@ -23,6 +23,7 @@ public class ETicketTradeBusinessExt extends BlankOrderLineSaveExt {
         Boolean supportMultiWriteOff = ability.isVoucherSupportMultiWriteOff();
         Map<String, String> output = Maps.newHashMap();
         output.put("e_multi_write_off", supportMultiWriteOff ? "1" : "0");
+        System.out.println("[UseCase]ETicketTrade is support multiple write-off: " + supportMultiWriteOff);
         return output;
     }
 
