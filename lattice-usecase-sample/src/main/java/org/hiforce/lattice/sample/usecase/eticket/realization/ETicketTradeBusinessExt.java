@@ -19,7 +19,7 @@ public class ETicketTradeBusinessExt extends BlankOrderLineSaveExt {
 
     @Override
     public Map<String, String> getCustomOrderAttributes(OrderLine orderLine) {
-        EticketOrderLineAbility ability = new EticketOrderLineAbility(buildPreSaleOrderLine(orderLine));
+        EticketOrderLineAbility ability = new EticketOrderLineAbility(buildEticketOrderLine(orderLine));
         Boolean supportMultiWriteOff = ability.isVoucherSupportMultiWriteOff();
         Map<String, String> output = Maps.newHashMap();
         output.put("e_multi_write_off", supportMultiWriteOff ? "1" : "0");
@@ -28,7 +28,7 @@ public class ETicketTradeBusinessExt extends BlankOrderLineSaveExt {
     }
 
 
-    private ETicketOrderLine buildPreSaleOrderLine(OrderLine orderLine) {
+    private ETicketOrderLine buildEticketOrderLine(OrderLine orderLine) {
         ETicketOrderLine eTicketOrderLine = new ETicketOrderLine();
         eTicketOrderLine.setOrderLineId(orderLine.getOrderLineId());
         eTicketOrderLine.setScenario(orderLine.getScenario());
