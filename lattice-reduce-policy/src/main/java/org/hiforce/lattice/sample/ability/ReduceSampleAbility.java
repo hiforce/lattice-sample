@@ -50,7 +50,9 @@ public class ReduceSampleAbility extends BaseLatticeAbility<BlankReduceSampleExt
 
 
     public String sampleFirstNotNullReduce() {
-        return this.reduceExecute(BlankReduceSampleExt::firstNotNullReducePolicy, Reducers.firstOf(Objects::nonNull));
+        return this.reduceExecute(
+                BlankReduceSampleExt::firstNotNullReducePolicy,
+                Reducers.firstOf(Objects::nonNull));
     }
 
     @Override
