@@ -31,13 +31,13 @@ public class OrderLineSaveAbility extends BaseLatticeAbility<BlankOrderLineSaveE
     }
 
     public Map<String, String> getCustomOrderAttributes(OrderLine orderLine) {
-        return reduceExecute(EXT_ENTITY_ORDER_LINE_CUSTOM_ATTRIBUTES,
+        return reduceExecute(
                 p -> p.getCustomOrderAttributes(orderLine),
                 Reducers.flatMap(MapUtils::isNotEmpty));
     }
 
     private BigDecimal getItemCustomUnitPrice() {
-        BigDecimal price = reduceExecute(EXT_ENTITY_ORDER_LINE_UNIT_PRICE,
+        BigDecimal price = reduceExecute(
                 p -> p.getItemCustomUnitPrice(getOrderLine()),
                 Reducers.firstOf(Objects::nonNull));
         if (null == price) {

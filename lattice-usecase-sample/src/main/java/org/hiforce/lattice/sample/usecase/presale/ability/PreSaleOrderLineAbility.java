@@ -23,7 +23,7 @@ public class PreSaleOrderLineAbility extends BaseLatticeAbility<BlankPreSaleTrad
     }
 
     public BigDecimal getCustomDownPaymentRatio() {
-        Double ratio = reduceExecute(EXT_PRE_SALE_CUSTOM_DOWN_PAY_RATIO,
+        Double ratio = reduceExecute(
                 BlankPreSaleTradeSDK::getCustomDownPaymentRatio,
                 Reducers.firstOf(Objects::nonNull));
         return (null == ratio || ratio > 1) ? new BigDecimal(1) : new BigDecimal(ratio);

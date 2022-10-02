@@ -21,7 +21,7 @@ public class EticketOrderLineAbility extends BaseLatticeAbility<BlankETicketTrad
 
 
     public Boolean isVoucherSupportMultiWriteOff() {
-        return this.reduceExecute(EXT_ETICKET_IS_SUPPORT_MULTI_WRITE_OFF,
+        return this.reduceExecute(
                 BlankETicketTradeSDK::isVoucherSupportMultiWriteOff,
                 Reducers.allMatch(p -> p == null || p));
     }

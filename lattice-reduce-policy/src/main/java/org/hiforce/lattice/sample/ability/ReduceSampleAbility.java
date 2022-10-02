@@ -25,38 +25,32 @@ public class ReduceSampleAbility extends BaseLatticeAbility<BlankReduceSampleExt
     }
 
     public Boolean noneMatchReduce() {
-        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
-                BlankReduceSampleExt::getCustomListResult,
-                Reducers.noneMatch(p-> null != p && p.contains("Jean")));
+        return this.reduceExecute(BlankReduceSampleExt::getCustomListResult,
+                Reducers.noneMatch(p -> null != p && p.contains("Jean")));
     }
 
     public Boolean allMathReduce() {
-        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
-                BlankReduceSampleExt::getCustomListResult,
+        return this.reduceExecute(BlankReduceSampleExt::getCustomListResult,
                 Reducers.allMatch(Objects::nonNull));
     }
 
     public Boolean anyMatchReduce() {
-        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
-                BlankReduceSampleExt::getCustomListResult,
+        return this.reduceExecute(BlankReduceSampleExt::getCustomListResult,
                 Reducers.anyMatch(p -> null != p && p.contains("Jack")));
     }
 
     public List<String> flatListReduce() {
-        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
-                BlankReduceSampleExt::getCustomListResult,
+        return this.reduceExecute(BlankReduceSampleExt::getCustomListResult,
                 Reducers.flatList(CollectionUtils::isNotEmpty));
     }
 
     public List<List<String>> sampleNoneReduce() {
-        return this.reduceExecute(EXT_CUSTOM_LIST_RESULT,
-                BlankReduceSampleExt::getCustomListResult, Reducers.none());
+        return this.reduceExecute(BlankReduceSampleExt::getCustomListResult, Reducers.none());
     }
 
 
     public String sampleFirstNotNullReduce() {
-        return this.reduceExecute(EXT_FIRST_NOT_NULL_POLICY,
-                BlankReduceSampleExt::firstNotNullReducePolicy, Reducers.firstOf(Objects::nonNull));
+        return this.reduceExecute(BlankReduceSampleExt::firstNotNullReducePolicy, Reducers.firstOf(Objects::nonNull));
     }
 
     @Override

@@ -24,8 +24,7 @@ public class OrderLinePriceAbility extends BaseLatticeAbility<OrderLinePriceExt>
     }
 
     public Long getCustomUnitPrice(OrderLine orderLine) {
-        return Optional.ofNullable(reduceExecute(EXT_ORDER_LINE_CUSTOM_UNIT_PRICE,
-                        p -> p.getCustomUnitPrice(orderLine),
+        return Optional.ofNullable(reduceExecute(p -> p.getCustomUnitPrice(orderLine),
                         Reducers.firstOf(Objects::nonNull)))
                 .orElse(orderLine.getUnitPrice());
     }
