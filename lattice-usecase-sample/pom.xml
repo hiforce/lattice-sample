@@ -21,5 +21,4 @@
             <artifactId>lattice-runtime</artifactId>
         </dependency>
     </dependencies>
-
 </project>

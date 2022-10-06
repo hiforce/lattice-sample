@@ -9,16 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lattice-quick-start</artifactId>
+    <artifactId>lattice-build-sample</artifactId>
+
 
     <dependencies>
         <dependency>
             <groupId>org.hiforce.lattice</groupId>
-            <artifactId>lattice-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.hiforce.lattice</groupId>
-            <artifactId>lattice-runtime</artifactId>
+            <artifactId>lattice-usecase-sample</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
