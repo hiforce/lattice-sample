@@ -26,6 +26,7 @@
         <module>lattice-reduce-policy</module>
         <module>lattice-usecase-sample</module>
         <module>lattice-build-sample</module>
+        <module>lattice-spring-sample</module>
     </modules>
 
     <dependencyManagement>
