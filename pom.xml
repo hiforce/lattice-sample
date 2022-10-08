@@ -25,6 +25,7 @@
         <module>lattice-load-business-config</module>
         <module>lattice-reduce-policy</module>
         <module>lattice-usecase-sample</module>
+        <module>lattice-spring-sample</module>
     </modules>
 
     <dependencyManagement>
