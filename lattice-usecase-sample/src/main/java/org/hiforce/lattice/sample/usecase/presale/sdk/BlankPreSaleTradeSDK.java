@@ -12,4 +12,9 @@ public class BlankPreSaleTradeSDK extends BusinessExt implements PreSaleTradeSDK
     public Double getCustomDownPaymentRatio() {
         return null;
     }
+
+    @Override
+    public Integer getCustomPreSalePhases() {
+        return null;
+    }
 }

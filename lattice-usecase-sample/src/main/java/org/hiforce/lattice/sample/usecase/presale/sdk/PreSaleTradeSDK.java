@@ -18,4 +18,13 @@ public interface PreSaleTradeSDK extends IBusinessExt {
             reduceType = ReduceType.FIRST
     )
     Double getCustomDownPaymentRatio();
+
+    String EXT_PRE_SALE_CUSTOM_PHASES = "EXT_PRE_SALE_CUSTOM_PHASES";
+
+    @Extension(
+            code = EXT_PRE_SALE_CUSTOM_PHASES,
+            name = "Custom PreSale Phases Numbers",
+            reduceType = ReduceType.FIRST
+    )
+    Integer getCustomPreSalePhases();
 }
