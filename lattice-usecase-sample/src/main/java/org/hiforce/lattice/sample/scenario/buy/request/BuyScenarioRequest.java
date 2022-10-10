@@ -3,7 +3,7 @@ package org.hiforce.lattice.sample.scenario.buy.request;
 import com.google.common.collect.Maps;
 import lombok.Getter;
 import lombok.Setter;
-import org.hifforce.lattice.model.scenario.ScenarioRequest;
+import org.hiforce.lattice.model.scenario.ScenarioRequest;
 import org.hiforce.lattice.sample.domain.order.model.OrderLine;
 
 import java.util.Map;

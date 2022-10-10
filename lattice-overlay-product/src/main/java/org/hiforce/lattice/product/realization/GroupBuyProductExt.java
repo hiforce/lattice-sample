@@ -1,6 +1,6 @@
 package org.hiforce.lattice.product.realization;
 
-import org.hifforce.lattice.annotation.Realization;
+import org.hiforce.lattice.annotation.Realization;
 import org.hiforce.lattice.product.GroupBuyProduct;
 import org.hiforce.lattice.sample.ability.ext.BlankOrderLinePriceExt;
 import org.hiforce.lattice.sample.model.OrderLine;

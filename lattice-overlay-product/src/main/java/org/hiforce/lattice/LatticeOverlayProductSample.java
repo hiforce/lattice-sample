@@ -1,6 +1,6 @@
 package org.hiforce.lattice;
 
-import org.hifforce.lattice.exception.LatticeRuntimeException;
+import org.hiforce.lattice.exception.LatticeRuntimeException;
 import org.hiforce.lattice.runtime.Lattice;
 import org.hiforce.lattice.runtime.session.BizSessionScope;
 import org.hiforce.lattice.sample.ability.OrderLinePriceAbility;

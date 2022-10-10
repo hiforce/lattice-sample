@@ -1,7 +1,7 @@
 package org.hiforce.lattice.sample.ext;
 
-import org.hifforce.lattice.annotation.Extension;
-import org.hifforce.lattice.model.ability.BusinessExt;
+import org.hiforce.lattice.annotation.Extension;
+import org.hiforce.lattice.model.ability.BusinessExt;
 
 /**
  * @author Rocky Yu

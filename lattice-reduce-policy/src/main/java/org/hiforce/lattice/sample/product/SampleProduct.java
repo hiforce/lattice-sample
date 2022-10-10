@@ -1,8 +1,8 @@
 package org.hiforce.lattice.sample.product;
 
-import org.hifforce.lattice.annotation.Product;
-import org.hifforce.lattice.model.business.ProductTemplate;
-import org.hifforce.lattice.model.scenario.ScenarioRequest;
+import org.hiforce.lattice.annotation.Product;
+import org.hiforce.lattice.model.business.ProductTemplate;
+import org.hiforce.lattice.model.scenario.ScenarioRequest;
 
 /**
  * @author Rocky Yu

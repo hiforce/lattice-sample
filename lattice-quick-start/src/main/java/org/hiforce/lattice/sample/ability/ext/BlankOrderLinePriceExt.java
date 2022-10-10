@@ -1,6 +1,6 @@
 package org.hiforce.lattice.sample.ability.ext;
 
-import org.hifforce.lattice.model.ability.BusinessExt;
+import org.hiforce.lattice.model.ability.BusinessExt;
 import org.hiforce.lattice.sample.model.OrderLine;
 
 /**

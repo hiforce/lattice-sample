@@ -4,8 +4,8 @@ import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import lombok.Getter;
 import lombok.Setter;
-import org.hifforce.lattice.model.business.BizContext;
-import org.hifforce.lattice.model.business.IBizObject;
+import org.hiforce.lattice.model.business.BizContext;
+import org.hiforce.lattice.model.business.IBizObject;
 
 import java.util.Map;
 import java.util.Set;

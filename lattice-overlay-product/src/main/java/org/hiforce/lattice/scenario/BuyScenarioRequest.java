@@ -2,7 +2,7 @@ package org.hiforce.lattice.scenario;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hifforce.lattice.model.scenario.ScenarioRequest;
+import org.hiforce.lattice.model.scenario.ScenarioRequest;
 import org.hiforce.lattice.sample.model.OrderLine;
 
 /**

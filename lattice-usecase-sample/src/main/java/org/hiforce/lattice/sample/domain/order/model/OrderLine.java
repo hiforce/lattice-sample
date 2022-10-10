@@ -2,9 +2,9 @@ package org.hiforce.lattice.sample.domain.order.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hifforce.lattice.model.business.BizContext;
-import org.hifforce.lattice.model.business.IBizObject;
-import org.hifforce.lattice.sequence.SequenceGenerator;
+import org.hiforce.lattice.model.business.BizContext;
+import org.hiforce.lattice.model.business.IBizObject;
+import org.hiforce.lattice.sequence.SequenceGenerator;
 
 /**
  * @author Rocky Yu

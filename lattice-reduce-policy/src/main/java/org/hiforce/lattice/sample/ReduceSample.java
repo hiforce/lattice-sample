@@ -2,9 +2,9 @@ package org.hiforce.lattice.sample;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.hifforce.lattice.exception.LatticeRuntimeException;
-import org.hifforce.lattice.model.business.IBizObject;
-import org.hifforce.lattice.model.scenario.ScenarioRequest;
+import org.hiforce.lattice.exception.LatticeRuntimeException;
+import org.hiforce.lattice.model.business.IBizObject;
+import org.hiforce.lattice.model.scenario.ScenarioRequest;
 import org.hiforce.lattice.runtime.session.BizSessionScope;
 import org.hiforce.lattice.sample.business.SampleBusiness;
 import org.hiforce.lattice.sample.model.SampleBizObject;

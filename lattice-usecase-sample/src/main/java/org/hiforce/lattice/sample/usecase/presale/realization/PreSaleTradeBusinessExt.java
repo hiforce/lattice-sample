@@ -1,6 +1,6 @@
 package org.hiforce.lattice.sample.usecase.presale.realization;
 
-import org.hifforce.lattice.annotation.Realization;
+import org.hiforce.lattice.annotation.Realization;
 import org.hiforce.lattice.sample.domain.order.ability.ext.BlankOrderLineSaveExt;
 import org.hiforce.lattice.sample.domain.order.model.OrderLine;
 import org.hiforce.lattice.sample.usecase.presale.PreSaleTradeUseCase;

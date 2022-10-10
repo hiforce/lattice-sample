@@ -1,7 +1,7 @@
 package org.hiforce.lattice.sample.domain.order.ability;
 
 import org.apache.commons.collections4.MapUtils;
-import org.hifforce.lattice.annotation.Ability;
+import org.hiforce.lattice.annotation.Ability;
 import org.hiforce.lattice.runtime.ability.BaseLatticeAbility;
 import org.hiforce.lattice.runtime.ability.reduce.Reducers;
 import org.hiforce.lattice.sample.domain.order.ability.ext.BlankOrderLineSaveExt;

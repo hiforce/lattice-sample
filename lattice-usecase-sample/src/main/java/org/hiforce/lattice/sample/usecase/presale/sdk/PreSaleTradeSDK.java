@@ -1,8 +1,8 @@
 package org.hiforce.lattice.sample.usecase.presale.sdk;
 
-import org.hifforce.lattice.annotation.Extension;
-import org.hifforce.lattice.annotation.model.ReduceType;
-import org.hifforce.lattice.model.ability.IBusinessExt;
+import org.hiforce.lattice.annotation.Extension;
+import org.hiforce.lattice.annotation.model.ReduceType;
+import org.hiforce.lattice.model.ability.IBusinessExt;
 
 /**
  * @author Rocky Yu

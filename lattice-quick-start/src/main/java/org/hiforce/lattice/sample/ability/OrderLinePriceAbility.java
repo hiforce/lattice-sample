@@ -1,6 +1,6 @@
 package org.hiforce.lattice.sample.ability;
 
-import org.hifforce.lattice.annotation.Ability;
+import org.hiforce.lattice.annotation.Ability;
 import org.hiforce.lattice.runtime.ability.BaseLatticeAbility;
 import org.hiforce.lattice.runtime.ability.reduce.Reducers;
 import org.hiforce.lattice.sample.ability.ext.BlankOrderLinePriceExt;

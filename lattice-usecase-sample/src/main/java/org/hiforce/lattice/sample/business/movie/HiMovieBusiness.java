@@ -1,8 +1,8 @@
 package org.hiforce.lattice.sample.business.movie;
 
-import org.hifforce.lattice.annotation.Business;
-import org.hifforce.lattice.model.business.BusinessTemplate;
-import org.hifforce.lattice.model.scenario.ScenarioRequest;
+import org.hiforce.lattice.annotation.Business;
+import org.hiforce.lattice.model.business.BusinessTemplate;
+import org.hiforce.lattice.model.scenario.ScenarioRequest;
 import org.hiforce.lattice.sample.scenario.buy.request.BuyScenarioRequest;
 
 /**

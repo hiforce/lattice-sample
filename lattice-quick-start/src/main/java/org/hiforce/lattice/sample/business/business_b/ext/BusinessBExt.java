@@ -1,6 +1,6 @@
 package org.hiforce.lattice.sample.business.business_b.ext;
 
-import org.hifforce.lattice.annotation.Realization;
+import org.hiforce.lattice.annotation.Realization;
 import org.hiforce.lattice.sample.ability.ext.BlankOrderLinePriceExt;
 import org.hiforce.lattice.sample.business.business_b.BusinessB;
 import org.hiforce.lattice.sample.model.OrderLine;

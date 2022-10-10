@@ -1,7 +1,7 @@
 package org.hiforce.lattice.sample.business;
 
-import org.hifforce.lattice.annotation.Business;
-import org.hifforce.lattice.model.business.BusinessTemplate;
+import org.hiforce.lattice.annotation.Business;
+import org.hiforce.lattice.model.business.BusinessTemplate;
 
 /**
  * @author Rocky Yu

@@ -2,8 +2,8 @@ package org.hiforce.lattice.sample.ability;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.hifforce.lattice.annotation.Ability;
-import org.hifforce.lattice.model.business.IBizObject;
+import org.hiforce.lattice.annotation.Ability;
+import org.hiforce.lattice.model.business.IBizObject;
 import org.hiforce.lattice.runtime.ability.BaseLatticeAbility;
 import org.hiforce.lattice.runtime.ability.reduce.Reducers;
 import org.hiforce.lattice.sample.ability.ext.BlankReduceSampleExt;

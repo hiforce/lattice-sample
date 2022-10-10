@@ -1,7 +1,7 @@
 package org.hiforce.lattice.sample.service.server;
 
-import org.hifforce.lattice.exception.LatticeRuntimeException;
-import org.hifforce.lattice.model.business.BusinessTemplate;
+import org.hiforce.lattice.exception.LatticeRuntimeException;
+import org.hiforce.lattice.model.business.BusinessTemplate;
 import org.hiforce.lattice.runtime.Lattice;
 import org.hiforce.lattice.runtime.session.BizSessionScope;
 import org.hiforce.lattice.sample.domain.order.ability.OrderLineSaveAbility;

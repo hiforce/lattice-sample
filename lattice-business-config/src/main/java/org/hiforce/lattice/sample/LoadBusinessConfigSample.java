@@ -1,16 +1,16 @@
 package org.hiforce.lattice.sample;
 
 import lombok.extern.slf4j.Slf4j;
-import org.hifforce.lattice.model.config.BusinessConfig;
-import org.hifforce.lattice.model.config.builder.BusinessConfigBuilder;
-import org.hifforce.lattice.model.config.builder.PriorityConfigBuilder;
+import org.hiforce.lattice.model.config.BusinessConfig;
+import org.hiforce.lattice.model.config.builder.BusinessConfigBuilder;
+import org.hiforce.lattice.model.config.builder.PriorityConfigBuilder;
 import org.hiforce.lattice.LatticeOverlayProductSample;
 import org.hiforce.lattice.product.GroupBuyProduct;
 import org.hiforce.lattice.runtime.Lattice;
 import org.hiforce.lattice.sample.business.business_b.BusinessB;
 
-import static org.hifforce.lattice.model.business.TemplateType.BUSINESS;
-import static org.hifforce.lattice.model.business.TemplateType.PRODUCT;
+import static org.hiforce.lattice.model.business.TemplateType.BUSINESS;
+import static org.hiforce.lattice.model.business.TemplateType.PRODUCT;
 import static org.hiforce.lattice.sample.ability.ext.OrderLinePriceExt.EXT_ORDER_LINE_CUSTOM_UNIT_PRICE;
 
 /**

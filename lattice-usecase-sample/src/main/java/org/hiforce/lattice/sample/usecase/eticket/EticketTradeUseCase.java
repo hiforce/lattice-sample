@@ -1,9 +1,9 @@
 package org.hiforce.lattice.sample.usecase.eticket;
 
 import org.apache.commons.lang3.StringUtils;
-import org.hifforce.lattice.annotation.UseCase;
-import org.hifforce.lattice.model.business.UseCaseTemplate;
-import org.hifforce.lattice.model.scenario.ScenarioRequest;
+import org.hiforce.lattice.annotation.UseCase;
+import org.hiforce.lattice.model.business.UseCaseTemplate;
+import org.hiforce.lattice.model.scenario.ScenarioRequest;
 import org.hiforce.lattice.sample.domain.order.model.OrderLineItem;
 import org.hiforce.lattice.sample.scenario.buy.request.BuyScenarioRequest;
 import org.hiforce.lattice.sample.usecase.eticket.sdk.ETicketTradeSDK;

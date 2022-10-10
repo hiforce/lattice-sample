@@ -1,7 +1,7 @@
 package org.hiforce.lattice.sample;
 
-import org.hifforce.lattice.annotation.Ability;
-import org.hifforce.lattice.annotation.model.ReduceType;
+import org.hiforce.lattice.annotation.Ability;
+import org.hiforce.lattice.annotation.model.ReduceType;
 import org.hiforce.lattice.runtime.ability.BaseLatticeAbility;
 import org.hiforce.lattice.runtime.ability.reduce.Reducers;
 import org.hiforce.lattice.sample.ext.SampleItemPriceExt;
