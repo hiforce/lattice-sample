@@ -10,8 +10,6 @@ import org.hiforce.lattice.sample.model.OrderLine;
 import java.util.Objects;
 import java.util.Optional;
 
-import static org.hiforce.lattice.sample.ability.ext.OrderLinePriceExt.EXT_ORDER_LINE_CUSTOM_UNIT_PRICE;
-
 /**
  * @author Rocky Yu
  * @since 2022/9/22

@@ -13,7 +13,7 @@ public class AutoLoadBusinessConfigSample {
         Lattice.getInstance().start();
 
         System.out.println("---------------------------------------");
-        LatticeOverlayProductSample.doBusiness("groupBuy");
+        LatticeOverlayProductSample.doBusiness("business.a", "groupBuy");
         System.out.println("---------------------------------------");
     }
 }

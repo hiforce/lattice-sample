@@ -18,16 +18,17 @@ public class LatticeOverlayProductSample {
         Lattice.getInstance().start();
 
         System.out.println("---------------------------------------");
-        doBusiness(null);
+        doBusiness("business.b", null);
         System.out.println("---------------------------------------");
-        doBusiness("groupBuy");
+        doBusiness("business.b", "groupBuy");
         System.out.println("---------------------------------------");
     }
 
-    public static void doBusiness(String source) {
+    public static String doBusiness(String bizCode, String source) {
+        StringBuffer buffer = new StringBuffer();
         OrderLine orderLine = new OrderLine();
         orderLine.setUnitPrice(1000L);
-        orderLine.setBizCode("business.b");
+        orderLine.setBizCode(bizCode);
         try {
             Long unitPrice = new BizSessionScope<Long, OrderLine>(orderLine) {
                 @Override
@@ -47,11 +48,14 @@ public class LatticeOverlayProductSample {
                     return request;
                 }
             }.invoke();
-            System.out.println("[Business B] overlay product unit price: " + unitPrice);
+            buffer.append(String.format("[%s] overlay product unit price: %s ", bizCode, unitPrice));
+            System.out.println(buffer.toString());
+            return buffer.toString();
         } catch (LatticeRuntimeException ex) {
             System.out.println(ex.getErrorMessage().getText());
         } catch (Throwable th) {
             th.printStackTrace();
         }
+        return null;
     }
 }
