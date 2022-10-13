@@ -1,5 +1,6 @@
 package org.hiforce.lattice.dynamic.web;
 
+import org.hiforce.lattice.dynamic.LatticeDynamic;
 import org.hiforce.lattice.runtime.Lattice;
 import org.hiforce.lattice.sample.SampleItemAbility;
 import org.hiforce.lattice.sample.model.SampleItem;
@@ -25,6 +26,12 @@ public class DynamicLoadTestController {
     @RequestMapping("/reload")
     public String reload() {
         Lattice.getInstance().reload();
+        return "ok";
+    }
+
+    @RequestMapping("/uninstall")
+    public String uninstall(){
+        LatticeDynamic.getInstance().uninstallPlugin("df0cf646cb282898821d732f533a75f3");
         return "ok";
     }
 }
