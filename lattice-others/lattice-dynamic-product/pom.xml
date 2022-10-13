@@ -3,19 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lattice-sample</artifactId>
+        <artifactId>lattice-others</artifactId>
         <groupId>org.hiforce.lattice</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lattice-others</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>lattice-business-cloth</module>
-        <module>Lattice-sample-ability-sdk</module>
-        <module>lattice-sample-ability-rt</module>
-        <module>lattice-dynamic-product</module>
-    </modules>
+    <artifactId>lattice-dynamic-product</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hiforce.lattice</groupId>
+            <artifactId>Lattice-sample-ability-sdk</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
