@@ -77,6 +77,30 @@ public class DynamicLoadTestController {
         return invokeBusinessPlugin();
     }
 
+    @RequestMapping("/business/install/1")
+    public String installBusinessPlugin_1() {
+        clear();
+        String urlStr = "/apps/lattice-business-cloth-1.0.0-SNAPSHOT.jar";
+        URL url = DynamicLoadTestController.class.getResource(urlStr);
+        if (null != url) {
+            File file = new File(url.getPath());
+            LatticeDynamic.getInstance().installPlugin(new PluginFileInfo(file));
+        }
+        return invokeBusinessPlugin();
+    }
+
+    @RequestMapping("/business/install/2")
+    public String installBusinessPlugin_2() {
+        clear();
+        String urlStr = "/apps/lattice-business-cloth-1.0.1-SNAPSHOT.jar";
+        URL url = DynamicLoadTestController.class.getResource(urlStr);
+        if (null != url) {
+            File file = new File(url.getPath());
+            LatticeDynamic.getInstance().installPlugin(new PluginFileInfo(file));
+        }
+        return invokeBusinessPlugin();
+    }
+
     @RequestMapping("/invoke")
     public String invokeBusinessPlugin() {
 
