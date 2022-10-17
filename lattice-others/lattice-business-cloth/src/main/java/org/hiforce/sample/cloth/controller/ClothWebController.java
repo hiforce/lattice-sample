@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022/10/17
  */
 @RestController
-public class ClotController {
+public class ClothWebController {
 
     @Autowired
     private ClothService clothService;
