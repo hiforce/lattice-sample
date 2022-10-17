@@ -6,8 +6,6 @@ import org.hiforce.lattice.runtime.ability.reduce.Reducers;
 import org.hiforce.lattice.sample.usecase.eticket.model.ETicketOrderLine;
 import org.hiforce.lattice.sample.usecase.eticket.sdk.BlankETicketTradeSDK;
 
-import static org.hiforce.lattice.sample.usecase.eticket.sdk.ETicketTradeSDK.EXT_ETICKET_IS_SUPPORT_MULTI_WRITE_OFF;
-
 /**
  * @author Rocky Yu
  * @since 2022/9/28
