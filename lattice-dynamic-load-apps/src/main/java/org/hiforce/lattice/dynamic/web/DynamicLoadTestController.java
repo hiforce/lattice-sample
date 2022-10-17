@@ -40,7 +40,7 @@ public class DynamicLoadTestController {
         log.info("====> Test product install");
         clear();
         StringBuilder buffer = new StringBuilder();
-        String value =  installBusinessPlugin();
+        String value = installBusinessPlugin();
         buffer.append("Before product install:").append(value).append("</br>");
 
         String urlStr = "/apps/lattice-dynamic-product-1.0.0-SNAPSHOT.jar";
@@ -99,6 +99,23 @@ public class DynamicLoadTestController {
             LatticeDynamic.getInstance().installPlugin(new PluginFileInfo(file));
         }
         return invokeBusinessPlugin();
+    }
+
+    @RequestMapping("/business/install/3")
+    public String installBusinessPlugin_3() {
+        clear();
+        String urlStr = "/apps/lattice-business-cloth-1.0.3.jar";
+        URL url = DynamicLoadTestController.class.getResource(urlStr);
+        if (null != url) {
+            File file = new File(url.getPath());
+            LatticeDynamic.getInstance().installPlugin(new PluginFileInfo(file));
+        }
+        return invokeBusinessPlugin();
+    }
+
+    @RequestMapping("/business/test")
+    public String businessTest() {
+        return "ok";
     }
 
     @RequestMapping("/invoke")
