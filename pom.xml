@@ -11,7 +11,7 @@
 
     <version>1.0.0-SNAPSHOT</version>
     <properties>
-        <version.lattice>1.0.12</version.lattice>
+        <version.lattice>1.0.12.3</version.lattice>
         <version.spring.boot>2.7.3</version.spring.boot>
         <springext-plugin-version>1.2</springext-plugin-version>
         <version.jdk>1.8</version.jdk>
