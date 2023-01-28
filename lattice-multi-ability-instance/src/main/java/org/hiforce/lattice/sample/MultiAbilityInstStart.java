@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
  * @author Rocky Yu
  * @since 2023/1/28
  */
+@SuppressWarnings("all")
 public class MultiAbilityInstStart {
 
     public static void main(String[] args) {
