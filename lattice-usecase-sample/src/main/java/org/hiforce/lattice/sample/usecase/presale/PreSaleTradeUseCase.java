@@ -6,6 +6,7 @@ import org.hiforce.lattice.model.business.UseCaseTemplate;
 import org.hiforce.lattice.model.scenario.ScenarioRequest;
 import org.hiforce.lattice.sample.domain.order.model.OrderLineItem;
 import org.hiforce.lattice.sample.scenario.buy.request.BuyScenarioRequest;
+import org.hiforce.lattice.sample.usecase.eticket.sdk.BlankETicketTradeSDK;
 import org.hiforce.lattice.sample.usecase.presale.sdk.PreSaleTradeSDK;
 
 /**
@@ -15,7 +16,7 @@ import org.hiforce.lattice.sample.usecase.presale.sdk.PreSaleTradeSDK;
 @UseCase(
         code = PreSaleTradeUseCase.CODE,
         name = "PreSale Trade UseCase",
-        sdk = PreSaleTradeSDK.class
+        sdk = BlankETicketTradeSDK.class
 )
 public class PreSaleTradeUseCase extends UseCaseTemplate {
 
