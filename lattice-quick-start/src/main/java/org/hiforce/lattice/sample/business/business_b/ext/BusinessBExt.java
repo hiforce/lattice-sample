@@ -14,6 +14,6 @@ public class BusinessBExt extends BlankOrderLinePriceExt {
 
     @Override
     public Long getCustomUnitPrice(OrderLine orderLine) {
-        return 1000L;
+        return orderLine.getUnitPrice();
     }
 }
